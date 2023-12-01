@@ -1,0 +1,11 @@
+Altas, bajas, cambios y consultas de alumnos(ncontrol,nombre, carrera, estatus),
+maestros(clavemaestroint,  nombrevarchar(150),  departamentoint ,  estatusvarchar(1)), 
+materias(clavemateriavarchar(8), nombrevarchar(150), créditosint), 
+grupos(clavemateriavarchar(8),  clavegrupovarchar(4), clavemaestroint, limitealumnosint,inscritosint,   horariolunesvarchar(11),   
+                                                                                                        horariomartesvarchar(11),    
+                                                                                                        horariomiercolesvarchar(11),    
+                                                                                                        horariojuevesvarchar(11), 
+                                                                                                        horarioviernesvarchar(11)).
+Para el horario de cualquier día ejemplo: 08:00-09:00.4.
+Una sección llamada toma de carga, donde se pueda ingresar el número de control,clave  de  materia  y  clave  del  grupo,  grabarlo  en una
+tablallamadacarga(clavemateria,clavegrupo,ncontrol),
